@@ -434,7 +434,7 @@ async function sendToClaude(
     let pendingBuffer = '';
     let anySent = false;
     let lastSendTime = 0;
-    const SEND_INTERVAL_MS = 24_000;
+    const SEND_INTERVAL_MS = 36_000;
 
     // Send everything in pendingBuffer. force=true ignores rate limit.
     async function trySend(force = false): Promise<void> {
